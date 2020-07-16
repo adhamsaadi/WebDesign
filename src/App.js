@@ -20,28 +20,21 @@ function App() {
     
     <div >
 
-
-
     <section  className="header">
        <Button variant="outlined" color="default"  className="btn" href="C:\Users\V\Desktop\index.php">
        sign Up 
       </Button>
     
-     <br></br>
-     <br></br>
      
-      <p className="hello">Welcome to our world</p>
+      <p className="hello">Search for any photo you want</p>
+      
+      <form id="content">
+  <input type="text" name="input" class="input" id="search-input"></input>
+  <button type="reset" class="search" id="search-btn"></button>
+</form>
 
-      <br></br> 
-      <br></br>
-      
-      
       <ul>
-      
-       
-       <Button  color="default"  className="btn" href="" >
-       category
-      </Button>
+
       
        <li>
        <IconButton aria-label="fa fa-home" className="home">
@@ -53,15 +46,28 @@ function App() {
      </ul>
     
      </section>
-
-
-
-
+    
+    
+    
+     <section  className="menu">
+     <Button  color="default"  href="" >
+        gallery
+      </Button>
+      <Button  color="default"   href="" >
+       category
+      </Button>
+      <Button  color="default"   href="" >
+       Contact
+      </Button>
+      <Button  color="default"  href="" >
+       about
+      </Button>
+      </section>
      <section className="mainbody">
      
      <div class="box1">
 
-     <Box bgcolor="text.secondary" color="primary.contrastText" p={2}  className="box01">
+     <Box bgcolor="text.secondary"  color="primary.contrastText" p={2}  className="box01">
      <p>یک سایت خوب که می توانید برای بهینه سازی تصاویر سایت خود استفاده کنید سایت tinypng است.
 
 امروزه سایت های مختلفی وجود دارند که می توانید با مراجعه به آن ها عکس های با کیفیتی را برای وب سایت خود برگزینید. از جمله این وب سایت ها shutterstock است که دارای قابلیت سرچ قدرتمندی بوده و تصاویر را با کیفیت های مختلف در اختیار شما می گذارد. امروزه ماندگاری بازدید کنندگان در وب سایت شما به یکی از عوامل بسیار مهم برای افزایش رتبه وب سایت ها تبدیل شده است. پس شما می توانید با استفاده از تصاویر جذاب و زیبا از این طریق سبب بهبود رتبه وب سایت خود شوید.
@@ -227,7 +233,10 @@ function App() {
       </section>    
 
     </div>
+    
   );
+
 }
 
 export default App;
+
