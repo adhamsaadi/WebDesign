@@ -1,77 +1,108 @@
-
 .header{
-border-radius: 5px;
-background-color: rgb(204, 106, 57);
-border: 1px solid rgb(232, 233, 233);
-margin: 20px;
-padding: 20px;
-font-size: 18px;
-height:353px;
-font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
-}
-
-
-btn {
-    text-align:left;
-    top:5%;
+  border-radius: 5px;
+  background-color: rgb(204, 106, 57);
+  border: 1px solid rgb(232, 233, 233);
+  padding:  20px;
+  margin:  10px 70px 1px 70px;
+  font-size: 18px;
+  
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   
   }
   
-
-a{
-  color: rgb(0, 0, 0);
-  text-decoration: none;
- 
   
-}
-ul{
-  list-style: none;
-  list-style-type: none;
-  text-align: right;
-}
-ul li{
-  display: inline;
-}
-ul li a{
-  margin: 20px;
-padding: 10px;
+  btn {
+      text-align:left;
+      top:5%;
+    
+    }
+  
 
-}
-ul li a:hover{
-  color: rgb(167, 82, 103);
-}
+  
+  a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+   
+    
+  }
+  ul{
+    list-style: none;
+    list-style-type: none;
+    text-align: right;
+  }
+  ul li{
+    display: inline;
+  }
+  ul li a{
+    margin: 20px;
+  padding: 10px;
+  
+  }
+  ul li a:hover{
+    color: rgb(167, 82, 103);
+  }
+  
+  
+  
+  .hello{
+    font-size:35px;
+    text-align:center;
+    color:rgb(255, 255, 255);
+    text-shadow: 3px 3px 3px rgb(2, 2, 2);
+    font-family: Tahoma,Geneva;
+  }
+  
+  .mainbody{
+    text-align: right;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   
+    margin: 20px;
+  padding: 30px;
+  border-radius: 5px;
 
+  }
+  
+  .footer{
+  font-family:'Times New Roman',Georgia ;
+  background-color:#dddcd9;
+  border: 1.5px solid #cc6733;
+  padding:  30px;
+  margin:  10px 70px 1px 70px;
+  text-align: left;
+  font-size: 15px;
+  border-radius: 5px;
+  height:90px;
+  }
+  
+  .box01{
+    margin: 20px;
+    padding: 10px;
+  }
+  .box02{
+    margin: 20px;
+    padding: 10px;
+ 
+  }
+  .box03{
+    margin: 20px;
+    padding: 10px;
+ 
+  }
+  .boxlike1{
+  
+    margin: 20px;
+    padding: 10px;
+  }
+  .boxlike2{
+  
+    margin: 20px;
+    padding: 10px;
+  }
+  .boxlike3{
+  
+    margin: 20px;
+    padding: 10px;
+  }
 
-
-.hello{
-  font-size:35px;
-  text-align:center;
-  color:rgb(255, 255, 255);
-  text-shadow: 3px 3px 3px rgb(2, 2, 2);
-  font-family: Tahoma,Geneva;
-}
-
-.body1{
-  text-align: right;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  background-color: #dddcd9;
-  margin: 20px;
-padding: 30px;
-border-radius: 5px;
-height:1000px;
-}
-
-.footer{
-font-family:'Times New Roman',Georgia ;
-background-color:#dddcd9;
-border: 1.5px solid #CC6733;
-margin: 25px;
-padding: 30px;
-text-align: left;
-font-size: 15px;
-border-radius: 5px;
-height:90px;
-}
 
 
