@@ -1,7 +1,6 @@
-
 .header{
  
-  background-color: rgba(117, 46, 46, 0.541);
+  background-color: rgb(204, 106, 57);
   border: 1px solid rgb(232, 233, 233);
   padding:  20px;
   font-size: 18px;
@@ -11,20 +10,21 @@
   .menu{
     
     text-align: center;
-    background-color: rgba(175, 50, 50, 0.199);
+    background-color: rgb(197, 130, 97);
     border: 1px solid rgb(232, 233, 233);
-    padding:  20px;
-    
+    height:43px;
     font-size: 18px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
   
   .footer{
     font-family:'Times New Roman',Georgia ;
-    background-color:rgba(117, 46, 46, 0.541);
-    padding:  30px 70px 30px 70px ;
+    background-color: rgb(197, 130, 97);
+    padding:  40px 70px 30px 70px ;
+    border: 1px solid rgb(197, 130, 97);
     text-align: left;
     font-size: 15px;
+    margin:1px ;
     }
     
   btn {
@@ -74,7 +74,7 @@
     text-align: right;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     padding:  30px 10px 30px 10px ;
-    background-color: rgba(117, 46, 46, 0.541);
+    background-color:  rgb(212, 212, 212);
   }
 
 
@@ -215,5 +215,11 @@
     -ms-transform: translate(-100%, -50%);
     transform: translate(-100%, -50%);
   }
+
+  .img{
+   width:400px;
+   height:400px;
+  }
+
 
   
