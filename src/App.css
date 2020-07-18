@@ -1,4 +1,5 @@
 
+
 .header{
  
   background-color: rgb(204, 106, 57);
@@ -75,7 +76,7 @@
     text-align: right;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     padding:  30px 10px 30px 10px ;
-    background-color:  rgba(187, 146, 125, 0.699);
+    background-color:  lightgray;
   }
 
 
@@ -218,12 +219,19 @@
   }
 
   .img1{
-
-    display: flex;
+       display: flex;
        flex-wrap: wrap;
        margin-left:  0px;
        flex:40%;
-       max-width:100%;
-    
-  }
+       max-width:100%; }
+
+
+.page{
+  font-family:'Times New Roman',Georgia ;
+  text-align:center;
+  font-size: 15px;
+  height:30px;
+  
+}
+
   
