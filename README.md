@@ -1,6 +1,8 @@
 Getting started
 
 
+
+
 To get the frontend running locally:
 
 Clone the file
@@ -12,6 +14,8 @@ npm start to start the local server (this project uses create-react-app)
 
 
 FRONT
+
+
 
 Our Localhost is the standard React's port 3000.
 
