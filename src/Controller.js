@@ -9,18 +9,21 @@ class Controller extends Component{
 
   constructor(props) {
     super(props);
+  
 
 
 
     // Create a new function to schedule updates.
     //  [anchorEl, setAnchorEl] = React.useState(null);
      this.state ={page :     <App changePageEvent={this.secondPageHandler } /> };
+     
 // 
     this.firstPageHandler = this.firstPageHandler.bind(this);
     this.secondPageHandler = this.secondPageHandler.bind(this);
 
 
   } 
+
   secondPageHandler = (event) =>{
     this.setState({page: <Second changePageEvent={this.firstPageHandler } />})
   }
