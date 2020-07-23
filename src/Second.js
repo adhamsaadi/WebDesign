@@ -4,26 +4,67 @@ import './App.css';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import SvgIcon from '@material-ui/core/SvgIcon';
-
+import Rating from '@material-ui/lab/Rating';
 import Box from '@material-ui/core/Box';
 import Grid from '@material-ui/core/Grid';
 import Avatar from '@material-ui/core/Avatar';
-
 import Menu from '@material-ui/core/Menu';
 import MenuItem  from '@material-ui/core/MenuItem';
 
+
+
+
+        
   
 class Second extends Component{
 
     constructor(props){
         super(props)
-
+        this.state={
+        anchorEl : null,
+       
     }
 
+    this.setAnchorEl = this.setAnchorEl.bind(this)
+    this.handleClick = this.handleClick.bind(this)
+    this.handleClose = this.handleClose.bind(this)
+  }
+
+
+  handleClick(event) {
+    this.setAnchorEl(event.currentTarget);
+}
+    setAnchorEl(value){
+        this.setState({
+            anchorEl: value,
+            open: !this.state.open
+        })
+    }
+    handleClose() {
+      this.setAnchorEl(null);
+  }  
+
+
+  renderMenu(){
+    return(
+      <Menu id="menu" anchorEl={this.state.anchorEl} open={this.state.open} onClose={this.handleClose}  >
+      <Button onClick={this.handleClose}  href="https://picjumbo.com/" >picjumbo</Button>
+      <br></br>
+      <Button onClick={this.handleClose}href="https://www.picsearch.com/">picsearch</Button>
+      <br></br>
+      <Button onClick={this.handleClose}href="https://unsplash.com/">unsplash</Button>
+  </Menu>
+     )
+  }
 
     render(){
+
+
+
         return <div>
             
+
+        
             <section  className="header">
 
          
@@ -41,7 +82,12 @@ class Second extends Component{
       </Button>
        
       <p className="hello">Search for any photo you want</p>
-     
+        <div id="custom-search-input">
+                <div class="input-group">
+                    <input type="text" class="search-query form-control" placeholder="Search here..."></input>
+                </div>
+       
+			</div>
       
       
       <br></br> 
@@ -55,15 +101,16 @@ class Second extends Component{
            
        
       
-      <Button  color="default"  href="" >
-      Related-websites
+      <Button  aria-owns={this.state.open ? 'menu' : undefined} aria-haspopup="true" onClick={this.handleClick} >
+      More Web
       </Button>
-    
-      <Button  color="default"  href="https://www.google.com/" >
-        google
+      {this.renderMenu()}
+
+      <Button  color="default"  href="https://www.akkasee.com/" >
+        ٍeducation
       </Button>
-      <Button  color="default"  href="http://www.picofile.com/" >
-      picofile
+      <Button  color="default"  href="https://www.akkasee.com/lms/" >
+      class
       </Button>
       
       
@@ -97,16 +144,16 @@ class Second extends Component{
       <Grid item xs={12} sm={4} >
       <Box bgcolor="lightgray"  color="background.paper" p={2}>
 
-          <img className="img1" alt="complex" src="http://s12.picofile.com/file/8403568150/852.jpg"/>
+          <img className="img1" alt="complex" src="http://s12.picofile.com/file/8403568184/DSC_01119.jpg"/>
        
-         
+          
 
       </Box>
       </Grid>
       <Grid item xs={12} sm={4} >
       <Box bgcolor="lightgray"  color="background.paper" p={2}>
 
-          <img className="img1" alt="complex" src="http://s12.picofile.com/file/8403568184/DSC_01119.jpg "/>
+          <img className="img1" alt="complex" src="http://s12.picofile.com/file/8403568150/852.jpg "/>
        
 
       </Box>
@@ -142,7 +189,26 @@ class Second extends Component{
 
 
       </section>    
-  
+       
+      <section className="page">
+     
+    
+     <div>
+
+         <br></br>
+         <br></br>
+        Do You Like our webSites?Rate us here please:)
+
+        <div>
+      <Rating name="half" defaultValue={2.5} precision={0.5} />
+      
+    </div>
+   
+
+
+     </div>
+   
+     </section>
     
       <section className="footer">
     
