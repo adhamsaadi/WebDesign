@@ -1,4 +1,5 @@
 
+
 .header{
  
   background-color: rgb(204, 106, 57);
@@ -66,7 +67,7 @@
   .hello{
     font-size:30px;
     text-align:center;
-    color:rgb(255, 255, 255);
+    color:lightgray;
     text-shadow: 3px 3px 3px rgb(2, 2, 2);
     font-family: Tahoma,Geneva;
   }
@@ -75,8 +76,10 @@
     text-align: right;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     padding:  30px 10px 30px 10px ;
-    background-color:#fff;
+    background-color:lightgray;
   }
+
+  
   .mainbody2{
     text-align: right;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -102,39 +105,36 @@
   font-family:'Times New Roman',Georgia ;
   text-align:center;
   font-size: 15px;
-  height:30px;
+  height:110px;
+  background-color:rgb(241, 240, 240);
   
 }
-.searchbar{
-  margin-bottom: auto;
-  margin-top: auto;
-  height: 40px;
-  width: 1000px;
-  background-color: #353b48;
-  border-radius: 30px;
-  padding: 10px;
-  
-  }
 
-  .search_input{
-  color: white;
-  border: 0;
-  outline: 0;
-  background: none;
-  width: 0;
-  caret-color:transparent;
-  line-height: 40px;
-  transition: width 0.4s linear;
-  }
 
-  .searchbar:hover > .search_input{
-  padding: 0 10px;
-  width: 450px;
-  caret-color:red;
-  transition: width 0.4s linear;
-  }
 
-  .searchbar:hover > .search_icon{
-  background: white;
-  color: #e74c3c;
-  }
+
+
+#custom-search-input {
+  margin:0;
+  margin-top: 10px;
+  padding: 0;
+}
+
+#custom-search-input .search-query {
+  width:25%;
+  padding-right: 3px;
+  padding-left: 15px;
+  position: relative;
+  left:37%;
+  height:32px;
+  margin-bottom: 0;
+  border:1px solid rgb(197, 130, 97);
+  border-radius:15px;
+ background-color:lightgray;
+}
+
+
+
+.search-query:focus{
+  z-index: 0;   
+}
