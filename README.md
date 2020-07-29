@@ -33,6 +33,6 @@ React Localhost : 127.0.0.1:3000
 
 We have used Material UI from https://material-ui.com/ and install some extra features to our react project for example Icones and Labs packages.
 
-we have used Html and Css for Login and Sign up forms.
+we have used Html and php for Login and Sign up forms.
 
 
