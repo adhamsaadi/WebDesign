@@ -11,6 +11,19 @@
 <style> 
   
       
+    <!DOCTYPE html> 
+<html> 
+<head>
+ 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<style> 
+  
+      
     input[type=text], 
     input[type=password] { 
         width: 100%; 
@@ -21,7 +34,15 @@
         box-sizing: border-box; 
     } 
     
-   
+   input[type=text], 
+    input[type=Email] { 
+        width: 100%; 
+        padding: 12px 20px; 
+        margin: 8px 0; 
+        display: inline-block; 
+        border: 2px solid #ccc; 
+        box-sizing: border-box; 
+    } 
       
     .btn btn-primary { 
         padding: 15px 20px; 
@@ -63,7 +84,7 @@
     <h2>Signup and Login Form</h2> 
 	
     <!--Step 1:Adding HTML-->
-    <form action="" style="border:1px solid #ccc"> 
+     <form action="connect.php" method="post">        
         <div class="container"> 
             <label><b>UserName:</b></label> 
             <input type="text" placeholder="Enter your Name:" name="Name" required> 
@@ -71,7 +92,8 @@
             <label><b>Password:</b></label> 
             <input type="password" placeholder="Enter Password:" name="psw" required> 
   
-            
+            <label><b>Email:</b></label> 
+            <input type="Email" placeholder="Enter Email:" name="Email" required> 
   
             <div class="clearfix"> 
               
