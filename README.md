@@ -4,10 +4,13 @@ Getting started
 How to run
 
 After cloning the repo, do the following to setup the app:
+
 1- from the backend folder, execute those lines:
 
 source env/bin/activate
+
 python manage.py createsuperuser
+
 python manage.py runserver
 
 2- the django server should now be up and running.
@@ -15,6 +18,7 @@ python manage.py runserver
 3- from the frontend folder, execute those lines:
 
 npm install
+
 npm start
 
 4- now go to the url located after Access URLs:
@@ -29,6 +33,7 @@ Also, I implemented a simple notes app example using React (react-boilerplate). 
 
 
 React Localhost : 127.0.0.1:3000
+
 ]Django localhost : 127.0.0.1:8000
 
 We have used Material UI from https://material-ui.com/ and install some extra features to our react project for example Icones and Labs packages.
