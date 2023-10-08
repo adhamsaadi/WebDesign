@@ -1,43 +1,32 @@
 # Getting started
 
 
-How to run
+How to Run
 
-After cloning the repo, do the following to setup the app:
+After cloning the repo, follow these steps to set up the app:
 
-1- from the backend folder, execute those lines:
+In the backend folder, execute the following commands:
 
-source env/bin/activate
+    source env/bin/activate
+    python manage.py createsuperuser
+    python manage.py runserver
 
-python manage.py createsuperuser
+The Django server should now be up and running.
 
-python manage.py runserver
+In the frontend folder, execute the following commands:
 
-2- the django server should now be up and running.
+    npm install
+    npm start
+    
+Now, navigate to the URL provided after "Access URLs".
+You should see the website in your browser.
 
-3- from the frontend folder, execute those lines:
+About the Project
 
-npm install
+In this project, we provide a simple boilerplate for anyone who wants to use Django as a backend and offers a JWT-auth based API. We have also implemented a simple notes app example using React (react-boilerplate). If you have any questions about the code, please feel free to ask.
 
-npm start
+React Localhost: 127.0.0.1:3000
+Django Localhost: 127.0.0.1:8000
 
-4- now go to the url located after Access URLs:
-
-5- and you should see the website in the browser
-
-
-About the project
-In this project, I try to provide a simple boilerplate for anyone who wants to use Django as a backend, and offer jwt-auth based API.
-Also, I implemented a simple notes app example using React (react-boilerplate). In case you have any questions about the code, please feel free to ask.
-
-
-
-React Localhost : 127.0.0.1:3000
-
-]Django localhost : 127.0.0.1:8000
-
-We have used Material UI from https://material-ui.com/ and install some extra features to our react project for example Icones and Labs packages.
-
-we have used Html forms and php for Login and Sign up forms.
-
+We have used Material UI from https://material-ui.com/ and installed some extra features to our React project, such as Icons and Labs packages. We have also used HTML forms and PHP for login and sign-up forms.
 
